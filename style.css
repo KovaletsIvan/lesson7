@@ -1,0 +1,30 @@
+#div {
+  display: inline-flex;
+  height: 50px;
+  width: 100%;
+}
+#btn1 {
+  min-height: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+#btn2 {
+  min-height: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+#btn3 {
+  min-height: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+a {
+  min-height: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: black;
+}
