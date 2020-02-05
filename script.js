@@ -41,3 +41,9 @@ btn2.addEventListener("dblclick", backgroundColorP);
 btn3.addEventListener("mousedown", mouseDown);
 
 // Task 4
+
+let i = document.querySelector(".peter");
+function display() {
+  document.querySelector(".in").style.display = "block";
+}
+i.addEventListener("click", display);
