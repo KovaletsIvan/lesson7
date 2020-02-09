@@ -84,3 +84,9 @@ function del(event) {
 document.addEventListener("click", del);
 
 // Task 6
+
+document.write(
+  "Width: " + window.innerWidth,
+  ", ",
+  " Height: " + window.innerHeight
+);
