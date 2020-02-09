@@ -51,3 +51,36 @@ linck.addEventListener("mouseover", mouseOver);
 linck.addEventListener("mouseout", mouseOut);
 
 // Task 4
+/*function myFunction(event) {
+  let y = event.target;
+  y.remove();
+}
+document.addEventListener("dblclick", myFunction);*/
+
+// Task 5
+
+function liveButton() {
+  //let p = document.createElement("p");
+  // p.innerHTML = "Mouse on me!"; // 1
+  //live.after(p);
+  live.insertAdjacentHTML("afterend", "<p>Mouse on me!<p>"); //2
+}
+live.addEventListener("mouseover", liveButton);
+function presBotton() {
+  live.insertAdjacentHTML("afterend", "<p>I wos presed!<p>");
+}
+live.addEventListener("click", presBotton);
+function outBotton() {
+  live.insertAdjacentHTML("afterend", "<p>Mous is not on me!<p>");
+}
+live.addEventListener("mouseout", outBotton);
+
+function del(event) {
+  let x = event.target;
+  if (x.tagName == "P") {
+    x.remove();
+  }
+}
+document.addEventListener("click", del);
+
+// Task 6
