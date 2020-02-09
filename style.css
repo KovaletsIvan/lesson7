@@ -66,3 +66,9 @@ a {
 .peter:hover .in {
   display: block;
 }
+input {
+  margin: 10px;
+}
+select {
+  margin: 10px;
+}

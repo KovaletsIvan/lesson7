@@ -34,16 +34,20 @@ function backgroundColorP() {
 function mouseDown() {
   document.getElementById("body").style.backgroundColor = "brown";
 }
+function mouseOver() {
+  document.getElementById("body").style.backgroundColor = "yellow";
+}
+function mouseOut() {
+  document.getElementById("body").style.backgroundColor = "white";
+}
+
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 btn1.addEventListener("click", backgroundColor);
 btn2.addEventListener("dblclick", backgroundColorP);
 btn3.addEventListener("mousedown", mouseDown);
+btn3.addEventListener("mouseout", mouseOut);
+linck.addEventListener("mouseover", mouseOver);
+linck.addEventListener("mouseout", mouseOut);
 
 // Task 4
-
-let i = document.querySelector(".peter");
-function display() {
-  document.querySelector(".in").style.display = "block";
-}
-i.addEventListener("click", display);
