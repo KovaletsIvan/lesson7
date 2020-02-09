@@ -90,3 +90,10 @@ document.write(
   ", ",
   " Height: " + window.innerHeight
 );
+
+// Task 7
+let usa = ["New - York", "Boston", "Chicago", "Washington"];
+let ukraine = ["Lviv", "Kyiv", "Odessa", "Dnipro"];
+let england = ["London", "Liverpol", "Totenhem", "Cambridge"];
+let country = [usa, ukraine, england];
+console.log(country[0][1]);
