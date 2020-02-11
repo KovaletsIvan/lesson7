@@ -51,11 +51,12 @@ linck.addEventListener("mouseover", mouseOver);
 linck.addEventListener("mouseout", mouseOut);
 
 // Task 4
-/*function myFunction(event) {
-  let y = event.target;
-  y.remove();
+
+function deleteElement() {
+  let x = document.getElementById("list");
+  x.remove(x.selectedIndex);
 }
-document.addEventListener("dblclick", myFunction);*/
+sub.addEventListener("click", deleteElement);
 
 // Task 5
 
@@ -85,15 +86,22 @@ document.addEventListener("click", del);
 
 // Task 6
 
-document.write(
-  "Width: " + window.innerWidth,
-  ", ",
-  " Height: " + window.innerHeight
-);
+function widthHeight() {
+  window.innerHTML = document.write(
+    "Width: " + window.innerWidth,
+    ", ",
+    " Height: " + window.innerHeight
+  );
+}
+widthHeight();
+window.addEventListener("change", widthHeight);
 
 // Task 7
-let usa = ["New - York", "Boston", "Chicago", "Washington"];
-let ukraine = ["Lviv", "Kyiv", "Odessa", "Dnipro"];
-let england = ["London", "Liverpol", "Totenhem", "Cambridge"];
-let country = [usa, ukraine, england];
-console.log(country[0][1]);
+
+let country = {
+  USA: ["New - York", "Boston", "Chicago", "Washington"],
+  Ukraine: ["Lviv", "Kyiv", "Odessa", "Dnipro"],
+  England: ["London", "Liverpol", "Totenhem", "Cambridge"]
+};
+
+console.log(country[0]);
