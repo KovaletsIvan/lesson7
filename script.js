@@ -94,7 +94,7 @@ function widthHeight() {
   );
 }
 widthHeight();
-window.addEventListener("change", widthHeight);
+document.addEventListener("change", widthHeight);
 
 // Task 7
 
